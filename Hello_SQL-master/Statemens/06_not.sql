@@ -1,1 +1,0 @@
-SELECT * FROM users WHERE NOT email = 'rrs2307@hotmail.es';

@@ -1,3 +1,3 @@
-SELECT * FROM users WHERE email LIKE '%gmail.com';--trae todo lo que tiene gmail se le pone signo de % antes y te trae todos los gmail es para traer =
-SELECT * FROM users WHERE email LIKE 'rrs2307%';--te trae todo con un caracter especial en este caso se pone al final de la coincidencia
-SELECT * FROM users WHERE email LIKE '%@%';--trae busqueda mas especifica por este caso caracter @ aprende rodrigo
+SELECT * FROM users WHERE email LIKE '%gmail.com';-- trae todo lo que tiene gmail se le pone signo de % antes y te trae todos los gmail es para traer =
+SELECT * FROM users WHERE email LIKE 'rrs2307%';-- te trae todo con un caracter especial en este caso se pone al final de la coincidencia
+SELECT * FROM users WHERE email LIKE '%@%';-- trae busqueda mas especifica por este caso caracter @ aprende rodrigo
