@@ -1,0 +1,1 @@
+SELECT AVG(age) FROM users;-- para sacar la media aritmetica oki rodrigo

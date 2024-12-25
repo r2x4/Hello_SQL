@@ -1,0 +1,1 @@
+SELECT * FROM users WHERE name IN ('Helen', 'Camila', 'Andrea');-- llama campo especifico algo rodrigo ojo los espacios ala hora de crear la base

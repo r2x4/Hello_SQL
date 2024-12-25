@@ -1,0 +1,1 @@
+SELECT * FROM users WHERE age BETWEEN 40 AND 60;-- llama lo que este entre osea aqui entre 40 a 60 años
