@@ -1,1 +1,1 @@
-DELETE FROM users WHWRE id_name = 11;-- se borra una fila ojo siempre ponerle el where si no borras toda la base de datos ojo ojo
+DELETE FROM users WHERE id_name = 11;-- se borra una fila ojo siempre ponerle el where si no borras toda la base de datos ojo ojo
