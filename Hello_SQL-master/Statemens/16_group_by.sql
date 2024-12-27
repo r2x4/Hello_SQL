@@ -4,3 +4,4 @@ SELECT COUNT(age),age FROM users GROUP BY age;-- saca las dos columnas jajaja qu
 SELECT COUNT(age),age FROM users GROUP BY age ORDER BY age ASC;-- asendente osea de menor a mayor
 SELECT COUNT(age),age FROM users GROUP BY age ORDER BY age DESC;-- desendente de mayor a menor
 SELECT COUNT(age),age FROM users WHERE age > 42 GROUP BY age ORDER BY age ASC;-- le agrego where aprende rodrigo capo y mostruo 
+SELECT COUNT(age) AS 'Conteo por Edad',age AS 'Edad' FROM users WHERE age > 42 GROUP BY age ORDER BY age ASC;
