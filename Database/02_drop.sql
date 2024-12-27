@@ -1,0 +1,1 @@
+DROP DATABASE pruebas;-- borra la base de datos
