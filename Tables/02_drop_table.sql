@@ -1,0 +1,1 @@
+DROP TABLE persons7;-- ejemplo de como borra una tabla no recomendable por perdidad de los datos 
