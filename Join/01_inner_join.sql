@@ -1,4 +1,4 @@
--- datos comunes de dos tablas
+-- datos comunes de dos tablas lo que no esta diligenciado osea null no lo trae
 -- esto es para 1:1
 
 SELECT * FROM users
@@ -33,7 +33,7 @@ ON users.company_id = Companies.company_id;
 
 -- varias tablas 
 
-SELECT users_languages
+SELECT * FROM users_languages
 JOIN users ON users_languages.user_id = users.user_id
 JOIN languages ON users_languages.language_id = languages.language_id;
 
@@ -42,3 +42,7 @@ JOIN languages ON users_languages.language_id = languages.language_id;
 SELECT users.name AS nombre, last_name AS apellidos, languages.name AS lenguaje_de_programacion FROM users_languages
 JOIN users ON users_languages.user_id = users.user_id
 JOIN languages ON users_languages.language_id = languages.language_id;
+
+SELECT users.name AS nombre, last_name AS apellidos, languages.name AS lenguaje FROM users_languages
+LEFT JOIN users ON users_languages.user_id = users.user_id
+LEFT JOIN languages ON users_languages.language_id = languages.language_id;
