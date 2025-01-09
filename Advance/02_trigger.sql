@@ -9,13 +9,8 @@ CREATE TABLE `email_history` (
   UNIQUE INDEX 'email_history_id_UNIQUE'('email_history_id' ASC) VISIBLE);
 
 
-  DELIMITER //
+DELIMITER //
 
-<<<<<<< HEAD
-  DELIMITER //
-
-=======
->>>>>>> ca535daa940e03e163f8f4297a20f3cc1845ff3e
 CREATE TRIGGER tg_email
   AFTER UPDATE ON users
   FOR EACH ROW
@@ -27,3 +22,4 @@ CREATE TRIGGER tg_email
   END//
 
 DELIMITER ;
+
