@@ -13,6 +13,16 @@ CREATE TABLE `email_history` (
   BEFORE/AFTER INSERT/UPDATE/DELETE-- son las opciones antes despues ect
   ON users
 
-  CREATE TRIGGER tg_email
-  AFTER UPDATE -- antes de carga
-  ON users
+  DELIMITER //
+
+CREATE TRIGGER tg_email
+  AFTER UPDATE ON users
+  FOR EACH ROW
+  BEGIN
+      IF OLD.email <> NEW.email THEN
+          INSERT INTO email_history (user_id, email)
+          VALUES (OLD.user_id, OLD.email);
+      END IF;
+  END//
+
+DELIMITER ;
