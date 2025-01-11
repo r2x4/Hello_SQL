@@ -7,7 +7,7 @@ def print_user(user):
         "port": "3306",
         "database": "hello_sql",
         "user": "root",
-        "password": "Dragon2307*", 
+        "password": "", 
     }
 
     connection = mysql.connector.connect(**config)
