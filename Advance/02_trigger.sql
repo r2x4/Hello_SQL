@@ -23,3 +23,7 @@ CREATE TRIGGER tg_email
 
 DELIMITER ;
 
+
+-- eliminar el trigger
+
+DROP TRIGGER tg_email;
