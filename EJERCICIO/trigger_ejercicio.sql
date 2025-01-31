@@ -14,18 +14,17 @@ BEGIN
 END//
 
 DELIMITER ;
+
+
 DELIMITER //
 
 CREATE TRIGGER `insertar_coordinador`
 AFTER INSERT ON `prueba_sql`.`julio_dia01`
 FOR EACH ROW
 BEGIN
-  -- Comprobamos si el coordinador ya está en la tabla coordinadores
-  IF NOT EXISTS (SELECT 1 FROM `prueba_sql`.`coordinadores` WHERE `NOMBRE_COORDINADOR` = NEW.`COORDINADOR`) THEN
-    -- Si no existe, lo insertamos en la tabla coordinadores
-    INSERT INTO `prueba_sql`.`coordinadores` (`NOMBRE_COORDINADOR`)
-    VALUES (NEW.`COORDINADOR`);
-  END IF;
+  -- Insertamos el coordinador y su ciudad directamente
+  INSERT INTO `prueba_sql`.`coordinadores` (`NOMBRE_COORDINADOR`, `CIUDAD_COORDINADOR`)
+  VALUES (NEW.`COORDINADOR`, NEW.`CIUDAD`);
 END//
 
 DELIMITER ;
