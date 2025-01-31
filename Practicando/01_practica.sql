@@ -13,4 +13,9 @@ CREATE TABLE practica_sql(
     cnatidad INT,
     nombre_tecnico VARCHAR(150) NOT NULL,
     cedula BIGINT NOT NULL,
+    tipo_trabajo VARCHAR(50) NOT NULL,
+    precio INT NOT NULL,
+    tipo_de_movil VARCHAR(50),
+    esquema_de_Trabajo VARCHAR(50),
+    coordinador VARCHAR(150) NOT NULL
 )
