@@ -11,3 +11,22 @@ CREATE TABLE
 
 -- crear base de datos ojo se hace en donde dice bases de datos
 CREATE DATABASE nombre_rodrigo;
+
+-- ver una tabla
+SELECT
+    *
+FROM
+    information_schema.tables
+WHERE
+    table_name = 'clientes'
+    AND table_schema = 'prueba';
+
+-- ver la tabla 
+SELECT
+    *
+FROM
+    prueba.clientes;
+
+-- cambio de nombre de una columna
+ALTER TABLE prueba.clientes
+RENAME COLUMN nombre TO nombre_apellido;
